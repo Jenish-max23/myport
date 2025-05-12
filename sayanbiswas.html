@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenish's Portfolio</title>
+    <link rel="icon" href="assets/images/sayanbiswas/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets\css\sayanbiswas.css">
+    <script src="https://kit.fontawesome.com/2c6faefed4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="assets/images/sayanbiswas/logo1.png" alt="Logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Undergrad Student</p>
+                <h1>Hi, I'm <span>Jenish</span><br>Shrestha from Nepal</h1>
+            </div>
+        </div>
+    </div>
+    <!----------about--------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="assets/images/sayanbiswas/jeni.png" alt="Profile pic">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi there!
+
+                       I am an adaptable and resourceful software enthusiast with a focus on building impactful and efficient solutions. My strengths lie in coordinating system features, supporting updates, and providing innovative ideas for performance improvement. I thrive on challenges and bring a proactive mindset to any problem-solving task.
+                        <br><br>
+                        My interests extend to Android app development, and I enjoy collaborating on open-source
+                        projects. I actively contribute to my GitHub repositories and engage with the developer
+                        community on LinkedIn and other platforms. Connecting with other developers and sharing
+                        knowledge is something I find incredibly rewarding.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Graphic Designing</span><br>Designing Graphics</li>
+                            <li><span>Web Development</span><br>Designing Websites</li>
+                            <li><span>UI/UX</span><br>Designing app logos</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - Current</span><br>BCA Program ongoing bachelor studies </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2016</span><br>SEE from Neelgiri School, Paknajol-Kathmandu, CGPA - 3.55</li>
+                            <li><span>2018</span><br>Standard XII from NCCS College, Paknajol-Kathmandu, CGPA - 3.2</li>
+                            <li><span>2021</span><br>BCA from Kantipur City College, Putalisadak-Kathmandu </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <a href="https://drive.google.com/file/d/1dlZuGHiAFhOSzYGC_VwNqOuTOTXgOrNz/view?usp=sharing"class="btn btn2">Checkout CV</a>
+        </div>
+    </div>
+    <!--------------services-------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-android"></i>
+                    <h2>Graphic Design</h2>
+                    <p>I have a strong background in creating compelling and impactful graphic designs that effectively communicate 
+                        ideas and enhance brand identity. My expertise includes working with modern design tools, producing visually 
+                        appealing layouts, and delivering creative solutions across digital and print media with a user-centered approach.
+                    </p>
+                    <a href="">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I specialize in creating modern, responsive websites that deliver exceptional user experiences
+                        across all devices. My designs focus on aesthetics, usability, and performance to ensure your
+                        online presence stands out.</p>
+                    <a href="">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Logo Design</h2>
+                    <p>I craft distinctive and memorable logos that effectively capture and communicate your brand's
+                        identity. My designs blend creativity and strategic thinking to ensure your logo leaves a
+                        lasting impression.</p>
+                    <a href="">Learn
+                        more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------portfolio---------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="assets/images/sayanbiswas/proz1.png" alt="NumplexApp">
+                    <div class="layer">
+                        <h3>Sasto Masto</h3>
+                        <p>This is a food ordering website made using windows form in dot net.</p>
+                        <a href="https://github.com/Jenish-max23/SastoMasto"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/images/sayanbiswas/proz2.png" alt="NumplexApp">
+                    <div class="layer">
+                        <h3>Sato Deal</h3>
+                        <p>This is a online Grocery Store site.</p>
+                        <a href="https://github.com/Jenish-max23/SastoDeal"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/images/sayanbiswas/proz3.PNG" alt="NumplexApp">
+                    <div class="layer">
+                        <h3>Quiz Game</h3>
+                        <p>This is a simple yet interesting game made in C.</p>
+                        <a href="https://github.com/Jenish-max23/QuizGame"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Jenish-max23?tab=repositories" class="btn">See more</a>
+        </div>
+    </div>
+    <!-----------contact-------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>sjenish619@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/Jenish-max23"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/jenish-shrestha-b168092a0/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Thanks For Visit <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+    <button id="goToTopBtn" title="Go to top"><i class="fa-solid fa-up-long"></i></button>
+    <script src="assets/js/sayanbiswas.js"></script>
+</body>
+
+</html>
