@@ -473,3 +473,238 @@ nav .fa-solid {
     margin-top: -40px;
     display: block;
 }
+
+/* Design section styling with hover captions */
+#designs {
+    padding: 80px 0;
+    margin-bottom: 80px;
+}
+
+.designs-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.designs-list > div {
+    background: #262626;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+}
+
+.designs-list > div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(218, 165, 32, 0.3);
+}
+
+.designs-list > div .design-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.designs-list > div:hover .design-image {
+    transform: scale(1.1);
+}
+
+.design-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.95));
+    color: white;
+    padding: 40px 30px 30px;
+    transform: translateY(100%);
+    transition: transform 0.4s ease;
+}
+
+.designs-list > div:hover .design-caption {
+    transform: translateY(0);
+}
+
+.design-caption h2 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #daa520;
+}
+
+.design-caption p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #ccc;
+}
+
+.design-caption a {
+    text-decoration: none;
+    color: #daa520;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #daa520;
+    padding-bottom: 2px;
+    transition: color 0.3s ease;
+}
+
+.design-caption a:hover {
+    color: #fff;
+}
+
+/* Remove old design styles */
+.design-item:hover img {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.design-item {
+    cursor: pointer;
+}
+
+.design-item .layer a {
+    pointer-events: none;
+}
+
+#designs .work-list {
+    display: none;
+}
+
+.design-item img {
+    display: none;
+}
+
+/* Responsive design for designs section */
+@media screen and (max-width: 768px) {
+    .designs-list {
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+    }
+    
+    .designs-list > div {
+        height: 250px;
+    }
+    
+    .design-caption {
+        padding: 30px 20px 20px;
+    }
+    
+    .design-caption h2 {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+    
+    .design-caption p {
+        font-size: 13px;
+        margin-bottom: 12px;
+    }
+    
+    #designs {
+        padding: 60px 0;
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 769px) {
+    .designs-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .designs-list > div {
+        height: 280px;
+    }
+    
+    .design-caption h2 {
+        font-size: 22px;
+    }
+}
+
+/* Modal styles for design image viewing */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    animation: fadeIn 0.3s;
+}
+
+.modal-content {
+    position: relative;
+    margin: auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 1000px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content img {
+    max-width: 100%;
+    max-height: 80%;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(218, 165, 32, 0.3);
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.close:hover,
+.close:focus {
+    color: #daa520;
+    text-decoration: none;
+}
+
+#modalCaption {
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Mobile responsive for modal */
+@media screen and (max-width: 600px) {
+    .modal-content {
+        width: 95%;
+        padding: 10px;
+    }
+    
+    .close {
+        top: 10px;
+        right: 15px;
+        font-size: 30px;
+    }
+    
+    #modalCaption {
+        font-size: 16px;
+    }
+}
